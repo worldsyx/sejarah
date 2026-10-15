@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal UTS Sejarah Kelas X - SMK Telkom Sidoarjo</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eef2ff',
+                            100: '#e0e7ff',
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                            700: '#4338ca',
+                            800: '#3730a3',
+                            900: '#312e81',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 3px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen flex flex-col">
+
+    <!-- Top Notification Banner -->
+    <header class="bg-gradient-to-r from-indigo-900 via-indigo-800 to-blue-900 text-white shadow-xl sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row justify-between items-center gap-3">
+            <div class="flex items-center space-x-3">
+                <div class="bg-white/10 p-2.5 rounded-xl backdrop-blur-md border border-white/20">
+                    <i class="fa-solid fa-landmark-dome text-2xl text-amber-300"></i>
+                </div>
+                <div>
+                    <h1 class="text-lg sm:text-xl font-bold tracking-tight">SMK Telkom Sidoarjo</h1>
+                    <p class="text-xs text-indigo-200 font-medium">Ujian Tengah Semester (UTS) • Sejarah Kelas X Fase E Semester Ganjil</p>
+                </div>
+            </div>
+            <!-- Navigation Tabs -->
+            <div class="flex bg-black/20 p-1.5 rounded-xl backdrop-blur-md border border-white/10">
+                <button onclick="switchTab('materi')" id="btn-materi" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 bg-white text-indigo-900 shadow-md">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Materi Lengkap</span>
+                </button>
+                <button onclick="switchTab('simulasi')" id="btn-simulasi" class="px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 text-white hover:bg-white/10">
+                    <i class="fa-solid fa-file-pen"></i>
+                    <span>Simulasi Ujian (40 Soal)</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8">
+
+        <!-- ================= SECTION 1: MATERI LENGKAP ================= -->
+        <section id="section-materi" class="space-y-8">
+            <!-- Welcome Hero Card -->
+            <div class="bg-gradient-to-br from-indigo-800 to-indigo-950 text-white rounded-3xl p-6 sm:p-10 shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-indigo-600/30 rounded-full blur-3xl pointer-events-none"></div>
+                <div class="relative z-10 max-w-3xl">
+                    <span class="bg-amber-400/20 border border-amber-300/30 text-amber-300 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">Modul Belajar Resmi UTS</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight mb-4">Pengantar Ilmu Sejarah & Teori Masuknya Hindu-Buddha</h2>
+                    <p class="text-indigo-200 text-sm sm:text-base leading-relaxed mb-6">
+                        Pelajari rangkuman materi komprehensif ini untuk mempersiapkan diri menghadapi Ujian Tengah Semester (UTS) Sejarah Kelas X. Terbagi ke dalam 3 Bab utama sesuai kisi-kisi resmi.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#bab1" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-xl transition backdrop-blur-sm">Bab 1: Pengantar Ilmu Sejarah</a>
+                        <a href="#bab2" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-xl transition backdrop-blur-sm">Bab 2: Teori Hindu-Buddha</a>
+                        <a href="#bab3" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white text-xs sm:text-sm font-medium px-4 py-2 rounded-xl transition backdrop-blur-sm">Bab 3: Kerajaan Kutai</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAB 1 -->
+            <div id="bab1" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-4 border-b border-slate-100 pb-4">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center font-bold text-xl shadow-inner">01</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Bab 1: Pengantar Ilmu Sejarah</h3>
+                        <p class="text-sm text-slate-500">Konsep dasar, ruang waktu, cara berpikir diakronik/sinkronik, sumber, dan penelitian sejarah</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <!-- Card 1.1 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-book text-indigo-600"></i> 1. Pengertian & Sejarah sebagai Peristiwa</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Kata sejarah berasal dari bahasa Arab <i>syajaratun</i> yang berarti pohon (keturunan/silsilah). Secara ilmiah, sejarah adalah ilmu yang mempelajari peristiwa masa lampau umat manusia.
+                        </p>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200 text-xs text-slate-700 space-y-1">
+                            <p class="font-semibold text-slate-900">Sejarah sebagai Peristiwa memiliki 3 ciri utama:</p>
+                            <ul class="list-disc pl-4 space-y-0.5 text-slate-600">
+                                <li><b>Objektif:</b> Benar-benar terjadi dan didukung bukti otentik.</li>
+                                <li><b>Unik:</b> Hanya terjadi sekali dan tidak terulang persis sama (<i>einmalig</i>).</li>
+                                <li><b>Penting:</b> Memberikan pengaruh besar bagi kehidupan masyarakat luas.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Card 1.2 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-cubes text-indigo-600"></i> 2. Unsur Sejarah: Manusia, Ruang, Waktu</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Tiga dimensi penting yang tidak dapat dipisahkan dalam peristiwa sejarah:
+                        </p>
+                        <ul class="text-sm text-slate-600 space-y-1.5 list-disc pl-5">
+                            <li><b>Manusia:</b> Sebagai subjek dan objek utama pelaku sejarah.</li>
+                            <li><b>Ruang (Spasial):</b> Tempat di mana peristiwa sejarah itu terjadi (lokasi geografis).</li>
+                            <li><b>Waktu (Temporal):</b> Kapan peristiwa itu berlangsung (masa lampau). Tanpa waktu, sejarah kehilangan konteks kronologisnya.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 1.3 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-clock-rotate-left text-indigo-600"></i> 3. Kronologi & Tujuan Periodisasi</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <b>Kronologi</b> adalah ilmu tentang waktu untuk menyusun peristiwa sejarah sesuai urutan waktu kejadiannya (baku dan runtut).
+                        </p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <b>Periodisasi</b> adalah pengelompokan peristiwa sejarah ke dalam babak atau kurun waktu tertentu dengan tujuan:
+                        </p>
+                        <ul class="text-xs text-slate-600 list-disc pl-4 space-y-1">
+                            <li>Mempermudah pemahaman dan penulisan sejarah.</li>
+                            <li>Mengetahui perkembangan dinamika masyarakat dari masa ke masa.</li>
+                            <li>Menghindari kerancuan (anarkronisme) waktu sejarah.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 1.4 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-arrows-split-up-and-left text-indigo-600"></i> 4. Diakronik vs Sinkronik</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <b>Diakronik (Kronologis):</b> Berpikir memanjang dalam waktu, menyempit dalam ruang. Fokus melihat proses perkembangan suatu peristiwa dari waktu ke waktu.
+                        </p>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            <b>Sinkronik:</b> Berpikir meluas dalam ruang, terbatas dalam waktu. Fokus menganalisis struktur atau kondisi suatu peristiwa pada waktu tertentu secara mendalam tanpa melihat proses panjangnya.
+                        </p>
+                    </div>
+
+                    <!-- Card 1.5 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-file-lines text-indigo-600"></i> 5. Sumber Sejarah</h4>
+                        <p class="text-sm text-slate-600 text-xs">Berdasarkan kesaksian:</p>
+                        <ul class="text-xs text-slate-600 list-disc pl-4 space-y-1">
+                            <li><b>Sumber Primer:</b> Dibuat oleh saksi mata langsung (misal: Prasasti Yupa, naskah asli).</li>
+                            <li><b>Sumber Sekunder:</b> Dibuat oleh orang yang tidak langsung menyaksikan (misal: buku biografi sejarawan).</li>
+                        </ul>
+                        <p class="text-sm text-slate-600 text-xs pt-1">Berdasarkan bentuknya:</p>
+                        <ul class="text-xs text-slate-600 list-disc pl-4 space-y-1">
+                            <li><b>Tertulis:</b> Prasasti, surat kabar, arsip, naskah kuno.</li>
+                            <li><b>Lisan:</b> Wawancara, tradisi lisan, folklor.</li>
+                            <li><b>Benda (Artefak):</b> Candi, senjata kuno, fosil, perhiasan.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 1.6 -->
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-3">
+                        <h4 class="font-bold text-indigo-900 flex items-center gap-2"><i class="fa-solid fa-magnifying-glass text-indigo-600"></i> 6. Tahapan Penelitian Sejarah</h4>
+                        <ol class="text-xs text-slate-600 list-decimal pl-4 space-y-1.5">
+                            <li><b>Heuristik:</b> Tahap pengumpulan jejak/sumber sejarah.</li>
+                            <li><b>Kritik (Verifikasi):</b> Pengujian keaslian dan kredibilitas sumber (Kritik Ekstern & Intern).</li>
+                            <li><b>Interpretasi:</b> Penafsiran makna dan keterkaitan antar fakta sejarah.</li>
+                            <li><b>Historiografi:</b> Penulisan sejarah sebagai hasil akhir penelitian secara sistematis.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAB 2 -->
+            <div id="bab2" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-4 border-b border-slate-100 pb-4">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center font-bold text-xl shadow-inner">02</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Bab 2: Teori Masuknya Hindu-Buddha & Pengaruhnya</h3>
+                        <p class="text-sm text-slate-500">Teori Brahmana, Ksatria, Waisya, Arus Balik, dan pengaruh peradaban di Nusantara</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900">1. Teori Brahmana (J.C. Van Leur)</h4>
+                        <p class="text-sm text-slate-600">Agama Hindu dibawa oleh kaum pendeta (Brahmana) yang diundang oleh penguasa lokal Nusantara untuk memimpin upacara keagamaan dan menobatkan raja.</p>
+                        <p class="text-xs text-emerald-700 font-semibold">Kelebihan: Kaum Brahmana menguasai bahasa Sanskerta dan kitab suci Weda.</p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900">2. Teori Ksatria (F.D.K. Bosch, C.C. Berg)</h4>
+                        <p class="text-sm text-slate-600">Agama Hindu-Buddha dibawa oleh para prajurit/ksatria yang kalah perang di India lalu bermigrasi dan mendirikan koloni di Nusantara.</p>
+                        <p class="text-xs text-rose-700 font-semibold">Kelemahan: Tidak ada bukti prasasti militer atau kolonisasi penaklukan militer India di Nusantara.</p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900">3. Teori Waisya (N.J. Krom)</h4>
+                        <p class="text-sm text-slate-600">Agama Hindu-Buddha dibawa oleh para pedagang (Waisya) India yang datang berniaga dan berinteraksi/menikah dengan penduduk pribumi.</p>
+                        <p class="text-xs text-indigo-700 font-semibold">Kelebihan: Pedagang paling aktif berinteraksi dengan masyarakat pesisir Nusantara.</p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900">4. Teori Arus Balik (F.D.K. Bosch)</h4>
+                        <p class="text-sm text-slate-600">Masyarakat Nusantara aktif belajar sendiri ke India, mendalami agama Hindu-Buddha, lalu kembali ke tanah air untuk menyebarkannya.</p>
+                        <p class="text-xs text-emerald-700 font-semibold">Kelebihan: Sangat logis karena bangsa Indonesia memiliki peranan aktif dalam proses akulturasi.</p>
+                    </div>
+                </div>
+
+                <div class="bg-indigo-50/60 p-5 rounded-2xl border border-indigo-100 space-y-2">
+                    <h4 class="font-bold text-indigo-900"><i class="fa-solid fa-star text-amber-500 mr-2"></i> Bentuk Pengaruh Hindu-Buddha di Nusantara</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs text-slate-700 pt-2">
+                        <div class="bg-white p-3 rounded-xl border border-indigo-100">
+                            <b class="text-indigo-900 block mb-1">Pemerintahan:</b> Sistem kesukuan berubah menjadi sistem kerajaan berdaulat yang dipimpin raja (konsep dewa-raja).
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-indigo-100">
+                            <b class="text-indigo-900 block mb-1">Sosial & Budaya:</b> Muncul sistem kasta (khusus Hindu), perkembangan aksara Pallawa dan bahasa Sanskerta.
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-indigo-100">
+                            <b class="text-indigo-900 block mb-1">Keagamaan:</b> Sinkretisme antara kepercayaan asli (animisme/dinamisme) dengan Hindu-Buddha.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAB 3 -->
+            <div id="bab3" class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                <div class="flex items-center space-x-4 border-b border-slate-100 pb-4">
+                    <div class="w-12 h-12 bg-indigo-50 text-indigo-600 rounded-2xl flex items-center justify-center font-bold text-xl shadow-inner">03</div>
+                    <div>
+                        <h3 class="text-xl font-bold text-slate-900">Bab 3: Kerajaan Kutai</h3>
+                        <p class="text-sm text-slate-500">Kerajaan Hindu tertua di Nusantara, Prasasti Yupa, dan silsilah raja-raja</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900"><i class="fa-solid fa-map-location-dot text-indigo-600"></i> Letak & Sumber Sejarah</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Terletak di tepi Sungai Mahakam, Muara Kaman, Kalimantan Timur. Diperkirakan berdiri sekitar abad ke-4 M (± 400 M). Sumber sejarah utamanya adalah <b>7 buah Prasasti Yupa</b> bertuliskan aksara Pallawa dan bahasa Sanskerta.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900"><i class="fa-solid fa-scroll text-indigo-600"></i> Prasasti Yupa</h4>
+                        <p class="text-sm text-slate-600 leading-relaxed">
+                            Yupa adalah tiang batu (tugu) yang berfungsi sebagai tempat menambatkan hewan kurban untuk para dewa. Isi Yupa juga menceritakan silsilah raja dan kemakmuran Kerajaan Kutai di bawah Raja Mulawarman.
+                        </p>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-2xl border border-slate-100 space-y-2">
+                        <h4 class="font-bold text-indigo-900"><i class="fa-solid fa-crown text-indigo-600"></i> Raja-raja Kutai</h4>
+                        <ul class="text-xs text-slate-600 space-y-1.5 list-disc pl-4">
+                            <li><b>Kudungga:</b> Penguasa lokal pertama, namanya masih bernuansa Indonesia asli (belum terpengaruh Hindu).</li>
+                            <li><b>Aswawarman:</b> Anak Kudungga yang dijuluki <i>Wangsakerta</i> (pembentuk keluarga/dinasti raja). Mulai memeluk Hindu.</li>
+                            <li><b>Mulawarman:</b> Raja terbesar Kutai. Menyedekahkan 20.000 ekor sapi kepada brahmana dan mengadakan kurban emas.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SECTION 2: SIMULASI UJIAN (40 SOAL) ================= -->
+        <section id="section-simulasi" class="hidden space-y-6">
+            <!-- Start Screen -->
+            <div id="quiz-intro" class="bg-white rounded-3xl p-8 sm:p-12 shadow-sm border border-slate-200 text-center max-w-2xl mx-auto space-y-6">
+                <div class="w-20 h-20 bg-indigo-50 text-indigo-600 rounded-3xl mx-auto flex items-center justify-center text-3xl shadow-inner">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mb-2">Simulasi UTS Sejarah Kelas X</h2>
+                    <p class="text-slate-600 text-sm">
+                        Uji pemahaman Anda sesuai kisi-kisi resmi SMK Telkom Sidoarjo. Tes ini terdiri dari 40 soal terpadu dengan rincian:
+                    </p>
+                </div>
+                <div class="grid grid-cols-3 gap-3 text-left max-w-md mx-auto bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs text-slate-700">
+                    <div><b>20 Soal</b><br><span class="text-slate-500">Pilihan Ganda (1-20)</span></div>
+                    <div><b>10 Soal</b><br><span class="text-slate-500">Benar - Salah (21-30)</span></div>
+                    <div><b>10 Soal</b><br><span class="text-slate-500">PG Kompleks (31-40)</span></div>
+                </div>
+                <div class="pt-2">
+                    <button onclick="startQuiz()" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold px-8 py-3.5 rounded-2xl shadow-lg shadow-indigo-600/30 transition transform active:scale-95">
+                        <i class="fa-solid fa-play mr-2"></i> Mulai Ujian Sekarang
+                    </button>
+                </div>
+            </div>
+
+            <!-- Active Quiz Screen -->
+            <div id="quiz-active" class="hidden space-y-6">
+                <!-- Top Status Bar -->
+                <div class="bg-white rounded-2xl p-4 sm:p-6 shadow-sm border border-slate-200 flex flex-col sm:flex-row justify-between items-center gap-4">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-indigo-50 text-indigo-700 px-4 py-2 rounded-xl text-sm font-bold">
+                            Soal <span id="current-q-num">1</span> dari 40
+                        </div>
+                        <div id="badge-question-type" class="bg-amber-50 text-amber-700 border border-amber-200 px-3 py-1 rounded-lg text-xs font-semibold">
+                            Pilihan Ganda
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-3">
+                        <div class="flex items-center space-x-2 bg-slate-100 px-4 py-2 rounded-xl text-slate-700 text-sm font-semibold">
+                            <i class="fa-regular fa-clock text-indigo-600"></i>
+                            <span id="timer-display">60:00</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question & Options Card -->
+                <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200 space-y-8">
+                    <div class="space-y-3">
+                        <div class="text-xs font-semibold uppercase tracking-wider text-indigo-600" id="question-category-label">Pengantar Ilmu Sejarah</div>
+                        <h3 id="question-text" class="text-lg sm:text-xl font-bold text-slate-900 leading-snug">
+                            Pertanyaan akan muncul di sini...
+                        </h3>
+                    </div>
+
+                    <!-- Options Container -->
+                    <div id="options-container" class="space-y-3">
+                        <!-- Dynamic options will be injected here -->
+                    </div>
+
+                    <!-- Navigation Footer inside Quiz -->
+                    <div class="flex justify-between items-center pt-6 border-t border-slate-100">
+                        <button onclick="prevQuestion()" id="btn-prev" class="bg-slate-100 hover:bg-slate-200 text-slate-700 px-5 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-2">
+                            <i class="fa-solid fa-arrow-left"></i> <span>Sebelumnya</span>
+                        </button>
+                        <div class="flex items-center space-x-3">
+                            <button onclick="toggleFlag()" id="btn-flag" class="border border-slate-300 hover:bg-slate-50 text-slate-700 px-4 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-1.5">
+                                <i class="fa-regular fa-flag text-amber-500"></i> <span id="flag-text">Ragu-ragu</span>
+                            </button>
+                            <button onclick="nextQuestion()" id="btn-next" class="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-2 shadow-md shadow-indigo-600/20">
+                                <span>Selanjutnya</span> <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question Navigation Grid -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex justify-between items-center">
+                        <h4 class="font-bold text-slate-900 text-sm">Navigasi Nomor Soal</h4>
+                        <div class="flex items-center space-x-4 text-xs text-slate-600">
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-indigo-600 rounded-sm inline-block"></span> Terjawab</span>
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-amber-400 rounded-sm inline-block"></span> Ragu-ragu</span>
+                            <span class="flex items-center gap-1.5"><span class="w-3 h-3 bg-slate-200 rounded-sm inline-block"></span> Belum</span>
+                        </div>
+                    </div>
+                    <div id="nav-grid" class="grid grid-cols-8 sm:grid-cols-10 gap-2">
+                        <!-- Grid buttons 1-40 -->
+                    </div>
+                    <div class="pt-4 border-t border-slate-100 flex justify-end">
+                        <button onclick="confirmSubmitQuiz()" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition shadow-lg shadow-emerald-600/20">
+                            <i class="fa-solid fa-check-double mr-2"></i> Selesaikan & Kirim Ujian
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Screen -->
+            <div id="quiz-result" class="hidden space-y-8">
+                <div class="bg-gradient-to-br from-indigo-900 to-slate-900 text-white rounded-3xl p-8 sm:p-12 shadow-xl text-center space-y-4 relative overflow-hidden">
+                    <div class="w-20 h-20 bg-white/10 border border-white/20 text-amber-300 rounded-3xl mx-auto flex items-center justify-center text-3xl shadow-xl">
+                        <i class="fa-solid fa-trophy"></i>
+                    </div>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold">Ujian Telah Selesai!</h2>
+                    <p class="text-indigo-200 text-sm">Berikut adalah hasil evaluasi uji kompetensi UTS Sejarah Kelas X Anda.</p>
+                    <div class="inline-flex items-center gap-6 bg-white/10 border border-white/20 px-8 py-4 rounded-2xl backdrop-blur-md">
+                        <div>
+                            <span class="text-xs text-indigo-200 block uppercase tracking-wider font-semibold">Skor Akhir</span>
+                            <span id="result-score" class="text-4xl font-extrabold text-amber-300">85</span>
+                        </div>
+                        <div class="w-px h-10 bg-white/20"></div>
+                        <div>
+                            <span class="text-xs text-indigo-200 block uppercase tracking-wider font-semibold">Benar / Total</span>
+                            <span id="result-correct" class="text-2xl font-bold">34 / 40</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button onclick="restartQuiz()" class="bg-white text-indigo-900 hover:bg-indigo-50 font-bold px-6 py-3 rounded-xl text-sm transition shadow-md">
+                            <i class="fa-solid fa-rotate-right mr-2"></i> Ulangi Simulasi Ujian
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Review Section with Explanations -->
+                <div class="bg-white rounded-3xl p-6 sm:p-8 shadow-sm border border-slate-200 space-y-6">
+                    <h3 class="text-xl font-bold text-slate-900 border-b border-slate-100 pb-4 flex items-center justify-between">
+                        <span>Pembahasan Soal & Kunci Jawaban</span>
+                        <span class="text-xs font-normal text-slate-500">Tinjau jawaban Anda di bawah ini</span>
+                    </h3>
+                    <div id="review-container" class="space-y-6">
+                        <!-- Detailed review items will be injected here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-slate-200 mt-16 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4">
+            <p>Portal Pembelajaran & Simulasi UTS Sejarah Kelas X • SMK Telkom Sidoarjo</p>
+            <p class="mt-1">Hak Cipta Dilindungi Undang-Undang © 2026</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript Application Logic -->
+    <script>
+        // Tab switching logic
+        function switchTab(tab) {
+            const materiSec = document.getElementById('section-materi');
+            const simulasiSec = document.getElementById('section-simulasi');
+            const btnMateri = document.getElementById('btn-materi');
+            const btnSimulasi = document.getElementById('btn-simulasi');
+
+            if (tab === 'materi') {
+                materiSec.classList.remove('hidden');
+                simulasiSec.classList.add('hidden');
+                btnMateri.className = "px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 bg-white text-indigo-900 shadow-md";
+                btnSimulasi.className = "px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 text-white hover:bg-white/10";
+            } else {
+                materiSec.classList.add('hidden');
+                simulasiSec.classList.remove('hidden');
+                btnSimulasi.className = "px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 bg-white text-indigo-900 shadow-md";
+                btnMateri.className = "px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center space-x-2 text-white hover:bg-white/10";
+            }
+        }
+
+        // Questions Database (40 Questions corresponding to the blueprint/kisi-kisi)
+        const questions = [
+            // --- PILIHAN GANDA (1-20) ---
+            {
+                id: 1,
+                type: "mcq",
+                category: "Pengantar Ilmu Sejarah",
+                question: "Kata sejarah berasal dari bahasa Arab 'syajaratun' yang berarti pohon. Dalam konteks ilmu sejarah, makna pohon tersebut merepresentasikan...",
+                options: [
+                    "Sumber bahan baku industri kayu di masa lampau",
+                    "Pertumbuhan silsilah dan keturunan keluarga raja atau dinasti",
+                    "Perubahan iklim bumi yang terjadi secara periodik",
+                    "Pusat ekosistem hutan tempat tinggal manusia purba"
+                ],
+                answer: 1,
+                explanation: "Kata syajaratun dalam bahasa Arab berarti pohon, yang dianalogikan dengan silsilah keluarga raja atau asal-usul keturunan yang bercabang."
+            },
+            {
+                id: 2,
+                type: "mcq",
+                category: "Pengantar Ilmu Sejarah",
+                question: "Sejarah sebagai peristiwa memiliki sifat einmalig, artinya...",
+                options: [
+                    "Dapat terulang kembali apabila kondisinya sama persis",
+                    "Hanya terjadi satu kali dan tidak akan terulang persis sama di masa mendatang",
+                    "Merupakan cerita rekaan fiksi sastra para pujangga istana",
+                    "Bersifat subyektif tergantung penafsiran pembaca"
+                ],
+                answer: 1,
+                explanation: "Einmalig adalah sifat unik sejarah di mana suatu peristiwa hanya terjadi satu kali dalam sejarah umat manusia dan tidak berulang secara persis."
+            },
+            {
+                id: 3,
+                type: "mcq",
+                category: "Unsur Sejarah",
+                question: "Dalam suatu peristiwa sejarah, tiga unsur penting yang tidak dapat dipisahkan adalah...",
+                options: [
+                    "Masa lalu, masa kini, masa depan",
+                    "Manusia, ruang, dan waktu",
+                    "Fakta, opini, dan hipotesis",
+                    "Mitos, legenda, dan sejarah"
+                ],
+                answer: 1,
+                explanation: "Unsur pokok sejarah terdiri atas manusia (pelaku/objek), ruang (tempat kejadian), dan waktu (kapan peristiwa itu berlangsung)."
+            },
+            {
+                id: 4,
+                type: "mcq",
+                category: "Unsur Sejarah",
+                question: "Peranan manusia dalam sejarah sangat sentral karena manusia bertindak sebagai...",
+                options: [
+                    "Penonton pasif jalannya alam semesta",
+                    "Subjek dan objek sekaligus dalam peristiwa sejarah",
+                    "Pencipta hukum alam fisika dan biologi",
+                    "Penentu cuaca dan iklim dunia purba"
+                ],
+                answer: 1,
+                explanation: "Manusia adalah penggerak sejarah (subjek) sekaligus pelaku yang mengalami peristiwa tersebut (objek)."
+            },
+            {
+                id: 5,
+                type: "mcq",
+                category: "Kronologi & Periodisasi",
+                question: "Penyusunan peristiwa sejarah secara kronologis sangat penting agar terhindar dari anarkronisme, yang dimaksud kronologi adalah...",
+                options: [
+                    "Pengelompokan peristiwa berdasarkan kesamaan tema",
+                    "Penyusunan peristiwa sejarah berdasarkan urutan waktu kejadian yang runtut",
+                    "Ilmu yang mempelajari lapisan tanah tempat fosil ditemukan",
+                    "Perhitungan kalender hijriah dan masehi"
+                ],
+                answer: 1,
+                explanation: "Kronologi adalah ilmu tentang waktu yang menyusun peristiwa secara runtut sesuai urutan terjadinya."
+            },
+            {
+                id: 6,
+                type: "mcq",
+                category: "Kronologi & Periodisasi",
+                question: "Tujuan utama dari pembuatan periodisasi dalam penulisan sejarah adalah...",
+                options: [
+                    "Mempersulit sejarawan dalam mencari sumber primer",
+                    "Mempermudah pemahaman, sistematika, dan kronologi perkembangan sejarah",
+                    "Membatasi jumlah buku sejarah yang diterbitkan",
+                    "Menghapus sejarah masa lalu yang dianggap tidak penting"
+                ],
+                answer: 1,
+                explanation: "Periodisasi bertujuan untuk menyederhanakan rangkaian cerita sejarah yang luas agar mudah dipahami secara sistematis."
+            },
+            {
+                id: 7,
+                type: "mcq",
+                category: "Diakronik dan Sinkronik",
+                question: "Cara berpikir diakronik dalam mempelajari sejarah memiliki ciri khas utama yaitu...",
+                options: [
+                    "Memanjang dalam waktu, menyempit dalam ruang (berproses)",
+                    "Meluas dalam ruang, terbatas dalam waktu (struktural)",
+                    "Bersifat statis dan tidak terikat waktu",
+                    "Hanya berfokus pada kondisi ekonomi masa kini"
+                ],
+                answer: 0,
+                explanation: "Diakronik bersifat kronologis, memanjang dalam dimensi waktu untuk melihat proses perkembangan suatu peristiwa."
+            },
+            {
+                id: 8,
+                type: "mcq",
+                category: "Diakronik dan Sinkronik",
+                question: "Perhatikan analisis suatu peristiwa pada waktu tertentu tanpa terlalu memikirkan proses perkembangannya dari masa lalu. Cara berpikir ini disebut...",
+                options: [
+                    "Diakronik",
+                    "Sinkronik",
+                    "Kronologis",
+                    "Anarkronis"
+                ],
+                answer: 1,
+                explanation: "Sinkronik adalah cara berpikir yang menganalisis suatu peristiwa secara mendalam pada waktu tertentu (meluas dalam ruang)."
+            },
+            {
+                id: 9,
+                type: "mcq",
+                category: "Sumber Sejarah",
+                question: "Prasasti Yupa peninggalan Kerajaan Kutai yang dibuat pada abad ke-4 M dan disaksikan langsung oleh raja Mulawarman dikategorikan sebagai sumber...",
+                options: [
+                    "Sekunder dan lisan",
+                    "Primer dan tertulis",
+                    "Tersier dan benda",
+                    "Rekaan dan fiktif"
+                ],
+                answer: 1,
+                explanation: "Prasasti adalah sumber tertulis primer karena dibuat langsung pada zaman terjadinya peristiwa tersebut oleh saksi zamannya."
+            },
+            {
+                id: 10,
+                type: "mcq",
+                category: "Sumber Sejarah",
+                question: "Wawancara dengan veteran pejuang kemerdekaan Indonesia menghasilkan sumber sejarah berbentuk...",
+                options: [
+                    "Sumber tertulis",
+                    "Sumber lisan",
+                    "Sumber benda",
+                    "Sumber sekunder"
+                ],
+                answer: 1,
+                explanation: "Keterangan langsung dari pelaku atau saksi sejarah melalui penuturan lisan merupakan sumber lisan."
+            },
+            {
+                id: 11,
+                type: "mcq",
+                category: "Penelitian Sejarah",
+                question: "Tahap awal dalam penelitian sejarah yang bertujuan untuk mengumpulkan jejak-jejak atau sumber sejarah disebut...",
+                options: [
+                    "Kritik",
+                    "Heuristik",
+                    "Interpretasi",
+                    "Historiografi"
+                ],
+                answer: 1,
+                explanation: "Heuristik berasal dari bahasa Yunani 'heurisko' yang artinya menemukan atau mencari sumber sejarah."
+            },
+            {
+                id: 12,
+                type: "mcq",
+                category: "Penelitian Sejarah",
+                question: "Setelah sumber dikumpulkan, sejarawan melakukan pengujian keaslian bahan (ekstern) dan kredibilitas isi (intern). Tahap ini dinamakan...",
+                options: [
+                    "Heuristik",
+                    "Kritik / Verifikasi",
+                    "Interpretasi",
+                    "Historiografi"
+                ],
+                answer: 1,
+                explanation: "Kritik atau verifikasi adalah tahap pengujian keaslian sumber sejarah secara fisik maupun isi informasinya."
+            },
+            {
+                id: 13,
+                type: "mcq",
+                category: "Perubahan dan Keberlanjutan",
+                question: "Kehidupan manusia tidak pernah terlepas dari dinamika perubahan dan keberlanjutan. Contoh dari konsep 'keberlanjutan' dalam sejarah adalah...",
+                    options: [
+                    "Pergantian sistem pemerintahan dari orde baru ke reformasi",
+                    "Sistem bercocok tanam dan struktur tradisional yang tetap diwariskan dari generasi ke generasi",
+                    "Pemberontakan G30S/PKI tahun 1965",
+                    "Proklamasi kemerdekaan RI 17 Agustus 1945"
+                ],
+                answer: 1,
+                explanation: "Keberlanjutan adalah suatu kondisi di mana tradisi, kebiasaan, atau struktur lama tetap dilestarikan di tengah arus perubahan."
+            },
+            {
+                id: 14,
+                type: "mcq",
+                category: "Perubahan dan Keberlanjutan",
+                question: "Perubahan sosial dalam sejarah dikatakan revolusi apabila...",
+                options: [
+                    "Perubahannya memerlukan waktu yang sangat lama dan bertahap",
+                    "Perubahan tersebut berlangsung secara cepat dan mendasar",
+                    "Hanya berdampak pada kelompok elit tertentu",
+                    "Terjadi tanpa adanya campur tangan manusia"
+                ],
+                answer: 1,
+                explanation: "Revolusi adalah bentuk perubahan sosial dan politik yang terjadi secara cepat dan mendasar dalam sendi kehidupan."
+            },
+            {
+                id: 15,
+                type: "mcq",
+                category: "Teori Hindu-Buddha",
+                question: "Teori Brahmana yang dikemukakan oleh J.C. Van Leur menyatakan bahwa agama Hindu-Buddha masuk ke Nusantara dibawa oleh...",
+                options: [
+                    "Para pedagang India yang berniaga",
+                    "Kaum prajurit yang kalah perang",
+                    "Para pendeta/brahmana yang diundang penguasa lokal",
+                    "Masyarakat Nusantara yang belajar ke India"
+                ],
+                answer: 2,
+                explanation: "Teori Brahmana menyatakan kaum pendeta datang atas undangan penguasa lokal untuk upacara keagamaan."
+            },
+            {
+                id: 16,
+                type: "mcq",
+                category: "Teori Hindu-Buddha",
+                question: "Kelemahan utama dari Teori Ksatria dalam proses masuknya Hindu-Buddha ke Nusantara adalah...",
+                options: [
+                    "Kaum ksatria tidak memiliki biaya untuk berlayar",
+                    "Tidak ditemukan prasasti militer atau bukti penaklukan wilayah Nusantara oleh militer India",
+                    "Kaum ksatria dilarang meninggalkan daratan India",
+                    "Bahasa Sanskerta hanya dikuasai oleh raja saja"
+                ],
+                answer: 1,
+                explanation: "Teori Ksatria lemah karena tidak ada bukti arkeologis berupa penaklukan militer atau kolonisasi perang di Nusantara."
+            },
+            {
+                id: 17,
+                type: "mcq",
+                category: "Teori Hindu-Buddha",
+                question: "Teori Waisya yang dipeloporkan oleh N.J. Krom menitikberatkan proses penyebaran Hindu-Buddha melalui peranan...",
+                options: [
+                    "Kaum Brahmana",
+                    "Para pedagang",
+                    "Para pelancong dan biksu",
+                    "Kaum bangsawan istana"
+                ],
+                answer: 1,
+                explanation: "Teori Waisya meyakini para pedagang India menyebarkan agama Hindu-Buddha melalui interaksi dagang dan perkawinan."
+            },
+            {
+                id: 18,
+                type: "mcq",
+                category: "Teori Hindu-Buddha",
+                question: "Teori Arus Balik yang dicetuskan oleh F.D.K. Bosch menyatakan bahwa peranan paling aktif dalam penyebaran Hindu-Buddha di Nusantara dipegang oleh...",
+                options: [
+                    "Bangsa India yang datang menetap",
+                    "Pemerintah kolonial Inggris dan Belanda",
+                    "Masyarakat Indonesia sendiri yang aktif pergi ke India lalu kembali menyebarkannya",
+                    "Para musafir Cina penjelajah samudra"
+                ],
+                answer: 2,
+                explanation: "Arus balik menekankan peran aktif orang Nusantara yang menimba ilmu ke India dan pulang menyebarkan budayanya."
+            },
+            {
+                id: 19,
+                type: "mcq",
+                category: "Kerajaan Kutai",
+                question: "Kerajaan Kutai Martadipura dikenal sebagai kerajaan Hindu tertua di Nusantara yang terletak di tepi aliran sungai...",
+                options: [
+                    "Sungai Kapuas, Kalimantan Barat",
+                    "Sungai Mahakam, Kalimantan Timur",
+                    "Sungai Barito, Kalimantan Selatan",
+                    "Sungai Musi, Sumatera Selatan"
+                ],
+                answer: 1,
+                explanation: "Kerajaan Kutai terletak di Muara Kaman di tepi Sungai Mahakam, Kalimantan Timur."
+            },
+            {
+                id: 20,
+                type: "mcq",
+                category: "Kerajaan Kutai",
+                question: "Sumber sejarah tertulis utama yang menjadi bukti keberadaan Kerajaan Kutai adalah...",
+                options: [
+                    "Prasasti Yupa bertuliskan huruf Pallawa",
+                    "Kitab Negarakertagama karya Mpu Prapanca",
+                    "Prasasti Tugu di Jakarta",
+                    "Candi Borobudur di Magelang"
+                ],
+                answer: 0,
+                explanation: "Prasasti Yupa (tiang batu) adalah sumber utama Kerajaan Kutai."
+            },
+
+            // --- BENAR - SALAH (21-30) ---
+            {
+                id: 21,
+                type: "tf",
+                category: "Pengantar Ilmu Sejarah",
+                question: "Sejarah bersifat subjektif apabila penulisan sejarah dipengaruhi oleh sudut pandang, memori, atau kepentingan sejarawan yang menulisnya.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Sebagai kisah (history as narrative), sejarah dapat memiliki subjektivitas tergantung pada rekonstruksi dan tafsir sejarawan."
+            },
+            {
+                id: 22,
+                type: "tf",
+                category: "Pengantar Ilmu Sejarah",
+                question: "Peristiwa sejarah dapat terulang kembali persis sama apabila para pelakunya memiliki latar belakang yang identik.",
+                options: ["Benar", "Salah"],
+                answer: 1,
+                explanation: "Salah. Sejarah tidak pernah terulang persis sama karena dimensi waktu dan situasi sosial selalu berbeda (einmalig)."
+            },
+            {
+                id: 23,
+                type: "tf",
+                category: "Konsep Waktu",
+                question: "Periodisasi dalam sejarah dibuat secara sembarangan tanpa harus memperhatikan urutan kronologis peristiwa.",
+                options: ["Benar", "Salah"],
+                answer: 1,
+                explanation: "Salah. Periodisasi tetap wajib disusun berdasarkan kronologi waktu yang runtut dan logis."
+            },
+            {
+                id: 24,
+                type: "tf",
+                category: "Konsep Waktu",
+                question: "Kronologi membantu sejarawan untuk menempatkan peristiwa sejarah pada urutan waktu yang tepat sehingga terhindar dari kekacauan sejarah.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Fungsi utama kronologi adalah mencegah anarkronisme (kekacauan waktu)."
+            },
+            {
+                id: 25,
+                type: "tf",
+                category: "Diakronik dan Sinkronik",
+                question: "Cara berpikir diakronik mengkaji suatu peristiwa sejarah dalam kurun waktu yang panjang secara berkesinambungan.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Diakronik bersifat memanjang dalam waktu (kronologis/proses)."
+            },
+            {
+                id: 26,
+                type: "tf",
+                category: "Diakronik dan Sinkronik",
+                question: "Pendekatan sinkronik lebih menekankan pada analisis struktur sosial dan kondisi suatu peristiwa pada saat tertentu tanpa melihat proses historisnya.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Itulah hakikat utama pendekatan sinkronik (meluas dalam ruang, terbatas dalam waktu)."
+            },
+            {
+                id: 27,
+                type: "tf",
+                category: "Sumber Sejarah",
+                question: "Sumber primer adalah sumber sejarah yang dibuat oleh pihak ketiga yang tidak memiliki kaitan langsung dengan peristiwa yang diteliti.",
+                options: ["Benar", "Salah"],
+                answer: 1,
+                explanation: "Salah. Sumber primer dibuat oleh pelaku atau saksi mata langsung dari peristiwa tersebut."
+            },
+            {
+                id: 28,
+                type: "tf",
+                category: "Penelitian Sejarah",
+                question: "Tahap interpretasi dalam penelitian sejarah mencakup penafsiran fakta-fakta sejarah agar memiliki keterkaitan makna yang utuh.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Interpretasi adalah penafsiran fakta sejarah secara objektif."
+            },
+            {
+                id: 29,
+                type: "tf",
+                category: "Teori Hindu-Buddha",
+                question: "Teori Brahmana didukung oleh argumen bahwa hanya kaum pendeta Brahmana yang menguasai kitab suci Weda dan bahasa Sanskerta.",
+                options: ["Benar", "Salah"],
+                answer: 0,
+                explanation: "Benar. Itu adalah landasan terkuat dalam Teori Brahmana."
+            },
+            {
+                id: 30,
+                type: "tf",
+                category: "Teori Hindu-Buddha",
+                question: "Teori Ksatria menyatakan bahwa masuknya Hindu-Buddha ke Nusantara dilakukan oleh para biksu Buddha yang menyebarkan ajaran damai.",
+                options: ["Benar", "Salah"],
+                answer: 1,
+                explanation: "Salah. Teori Ksatria menyatakan penyebarannya dilakukan oleh para prajurit/ksatria, bukan biksu."
+            },
+
+            // --- PILIHAN GANDA KOMPLEKS (31-40) ---
+            // Petunjuk: Pilih beberapa jawaban yang benar (bisa lebih dari satu). Untuk interaktif ini, kita buat pilihan ganda kompleks dengan multiple checkbox yang benar.
+            {
+                id: 31,
+                type: "complex",
+                category: "Teori Hindu-Buddha",
+                question: "Pilih dua teori utama yang paling populer dan diakui kuat dalam menjelaskan proses masuknya pengaruh Hindu-Buddha ke Nusantara! (Pilih 2 jawaban benar)",
+                options: [
+                    "Teori Brahmana",
+                    "Teori Ksatria",
+                    "Teori Arus Balik",
+                    "Teori Sudra"
+                ],
+                correctAnswers: [0, 2], // Teori Brahmana & Teori Arus Balik
+                explanation: "Teori Brahmana dan Teori Arus Balik adalah dua teori yang paling banyak didukung sejarawan karena kuatnya bukti penguasaan bahasa Sanskerta dan peran aktif bangsa Indonesia."
+            },
+            {
+                id: 32,
+                type: "complex",
+                category: "Teori Hindu-Buddha",
+                question: "Manakah pernyataan berikut yang merupakan kelebihan dari Teori Arus Balik? (Pilih 2 jawaban benar)",
+                options: [
+                    "Menempatkan bangsa Indonesia sebagai subjek aktif, bukan objek pasif",
+                    "Didukung oleh bukti adanya kolonisasi militer kerajaan India di Jawa",
+                    "Masuk akal karena kaum terpelajar Nusantara pergi menimba ilmu ke India",
+                    "Menyatakan bahwa pedagang India menguasai seluruh pemerintahan lokal"
+                ],
+                correctAnswers: [0, 2],
+                explanation: "Kelebihan utama Teori Arus Balik adalah menunjukkan keaktifan masyarakat Nusantara dalam menyerap dan menyebarkan kebudayaan Hindu-Buddha."
+            },
+            {
+                id: 33,
+                type: "complex",
+                category: "Pengaruh Hindu-Buddha",
+                question: "Bentuk pengaruh masuknya kebudayaan Hindu-Buddha dalam sistem pemerintahan di Nusantara tampak pada... (Pilih 2 jawaban benar)",
+                options: [
+                    "Perubahan kepemimpinan dari kepala suku menjadi sistem raja turun-temurun",
+                    "Penerapan sistem demokrasi terpimpin secara modern",
+                    "Adopsi konsep dewa-raja (raja dianggap sebagai titisan dewa)",
+                    "Penghapusan seluruh struktur adat istiadat pribumi secara total"
+                ],
+                correctAnswers: [0, 2],
+                explanation: "Pengaruh Hindu-Buddha mengubah sistem kesukuan menjadi kerajaan monarki absolut dengan konsep dewa-raja."
+            },
+            {
+                id: 34,
+                type: "complex",
+                category: "Pengaruh Hindu-Buddha",
+                question: "Dalam bidang sosial dan budaya, pengaruh Hindu-Buddha di Nusantara ditandai dengan... (Pilih 2 jawaban benar)",
+                options: [
+                    "Pengenalan sistem kasta dalam masyarakat (khususnya Hindu)",
+                    "Berkembangnya penggunaan huruf Pallawa dan bahasa Sanskerta",
+                    "Penggunaan mata uang digital secara masif",
+                    "Ditinggalkannya seluruh seni bangunan peninggalan megalitikum"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Sistem kasta dan aksara Pallawa/Sanskerta adalah bukti nyata akulturasi sosial-budaya."
+            },
+            {
+                id: 35,
+                type: "complex",
+                category: "Kerajaan Kutai",
+                question: "Pernyataan yang benar mengenai Prasasti Yupa peninggalan Kerajaan Kutai adalah... (Pilih 2 jawaban benar)",
+                options: [
+                    "Ditulis menggunakan aksara Pallawa dan bahasa Sanskerta",
+                    "Dipahatkan pada tiang batu yang berfungsi sebagai tempat menambatkan hewan kurban",
+                    "Ditemukan di pesisir pantai utara pulau Jawa",
+                    "Berisi silsilah kekuasaan kolonial Belanda di Kalimantan"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Yupa adalah tiang batu bertuliskan Pallawa/Sanskerta di Muara Kaman, Kutai."
+            },
+            {
+                id: 36,
+                type: "complex",
+                category: "Kerajaan Kutai",
+                question: "Informasi penting yang dapat kita ketahui dari isi Prasasti Yupa Kerajaan Kutai meliputi... (Pilih 2 jawaban benar)",
+                options: [
+                    "Silsilah Raja Kudungga, Aswawarman, hingga Mulawarman",
+                    "Keterangan sedekah 20.000 ekor sapi kepada para Brahmana",
+                    "Perjanjian damai antara Kutai dengan kerajaan Mongol",
+                    "Letak pusat pelabuhan laut internasional di Selat Malaka"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Prasasti Yupa menceritakan kedermawanan Mulawarman dan silsilah keluarganya."
+            },
+            {
+                id: 37,
+                type: "complex",
+                category: "Raja-raja Kutai",
+                question: "Manakah pernyataan yang tepat mengenai peran Raja Kudungga dan Aswawarman pada masa awal Kerajaan Kutai? (Pilih 2 jawaban benar)",
+                options: [
+                    "Kudungga merupakan penguasa lokal asli yang namanya belum bernuansa India",
+                    "Aswawarman dijuluki Wangsakerta sebagai pembentuk dinasti kerajaan",
+                    "Kudungga adalah orang pertama yang membawa agama Buddha dari Tibet",
+                    "Aswawarman memindahkan ibu kota Kutai ke wilayah Jawa Barat"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Kudungga adalah penguasa lokal asli, sedangkan Aswawarman digelari Wangsakerta (pembentuk keluarga raja)."
+            },
+            {
+                id: 38,
+                type: "complex",
+                category: "Raja-raja Kutai",
+                question: "Pencapaian terbesar Raja Mulawarman semasa memimpin Kerajaan Kutai adalah... (Pilih 2 jawaban benar)",
+                options: [
+                    "Melakukan kurban emas dan menyedekahkan 20.000 ekor sapi kepada kaum Brahmana",
+                    "Membawa Kutai mencapai puncak kejayaan ekonomi dan kemakmuran",
+                    "Menaklukkan seluruh pulau Sumatra dan Semenanjung Malaya",
+                    "Membangun Candi Borobudur sebagai pusat agama Buddha"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Mulawarman membawa Kutai pada puncak kejayaan dengan kedermawanannya yang dicatat dalam Yupa."
+            },
+            {
+                id: 39,
+                type: "complex",
+                category: "Kerajaan Kutai",
+                question: "Bukti kuat masuknya pengaruh Hindu dalam tata pemerintahan Kerajaan Kutai adalah... (Pilih 2 jawaban benar)",
+                options: [
+                    "Penggunaan gelar raja (seperti Maharaja) menggantikan kepala suku",
+                    "Pelaksanaan upacara keagamaan Hindu yang dipimpin oleh para Brahmana",
+                    "Sistem pemerintahan yang sepenuhnya demokratis dan dipilih rakyat",
+                    "Penghapusan seluruh hukum adat lokal secara mutlak"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Gelar raja dan kehadiran Brahmana dalam upacara korban menunjukkan pengaruh Hindu yang kuat."
+            },
+            {
+                id: 40,
+                type: "complex",
+                category: "Kerajaan Kutai",
+                question: "Pusat pemerintahan Kerajaan Kutai Martadipura di Kalimantan Timur berada di daerah... (Pilih 2 jawaban benar)",
+                options: [
+                    "Muara Kaman",
+                    "Hulu Sungai Mahakam",
+                    "Delta Sungai Brantas",
+                    "Kawasan Dataran Dieng"
+                ],
+                correctAnswers: [0, 1],
+                explanation: "Kutai terletak di Muara Kaman yang berada di aliran Sungai Mahakam."
+            }
+        ];
+
+        // Quiz State Variables
+        let currentQuestionIndex = 0;
+        let userAnswers = {}; // stores answers: for mcq/tf -> number, for complex -> array of indices
+        let flaggedQuestions = {}; // stores boolean flags
+        let timerInterval = null;
+        let timeLeft = 3600; // 60 minutes in seconds
+
+        function startQuiz() {
+            document.getElementById('quiz-intro').classList.add('hidden');
+            document.getElementById('quiz-active').classList.remove('hidden');
+            
+            // Initialize nav grid
+            renderNavGrid();
+            loadQuestion(0);
+            startTimer();
+        }
+
+        function startTimer() {
+            clearInterval(timerInterval);
+            timerInterval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(timerInterval);
+                    submitQuiz();
+                    return;
+                }
+                timeLeft--;
+                const mins = Math.floor(timeLeft / 60);
+                const secs = timeLeft % 60;
+                document.getElementById('timer-display').innerText = `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+            }, 1000);
+        }
+
+        function renderNavGrid() {
+            const grid = document.getElementById('nav-grid');
+            grid.innerHTML = '';
+            for (let i = 0; i < questions.length; i++) {
+                const btn = document.createElement('button');
+                btn.id = `nav-btn-${i}`;
+                btn.innerText = i + 1;
+                btn.className = getNavBtnClass(i);
+                btn.onclick = () => goToQuestion(i);
+                grid.appendChild(btn);
+            }
+        }
+
+        function getNavBtnClass(index) {
+            let base = "h-9 rounded-xl font-bold text-xs transition flex items-center justify-center border ";
+            const isAnswered = userAnswers[index] !== undefined && (Array.isArray(userAnswers[index]) ? userAnswers[index].length > 0 : true);
+            const isFlagged = flaggedQuestions[index];
+            const isCurrent = currentQuestionIndex === index;
+
+            if (isCurrent) {
+                base += " ring-2 ring-indigo-600 ring-offset-2 ";
+            }
+
+            if (isFlagged) {
+                return base + " bg-amber-400 text-white border-amber-500 shadow-sm";
+            } else if (isAnswered) {
+                return base + " bg-indigo-600 text-white border-indigo-700 shadow-sm";
+            } else {
+                return base + " bg-slate-100 text-slate-600 border-slate-200 hover:bg-slate-200";
+            }
+        }
+
+        function updateNavGridItem(index) {
+            const btn = document.getElementById(`nav-btn-${index}`);
+            if (btn) {
+                btn.className = getNavBtnClass(index);
+            }
+        }
+
+        function loadQuestion(index) {
+            currentQuestionIndex = index;
+            const q = questions[index];
+
+            document.getElementById('current-q-num').innerText = index + 1;
+            document.getElementById('question-category-label').innerText = q.category;
+            document.getElementById('question-text').innerText = q.question;
+
+            // Type badge
+            const typeBadge = document.getElementById('badge-question-type');
+            if (q.type === 'mcq') {
+                typeBadge.innerText = "Pilihan Ganda (1 Jawaban)";
+                typeBadge.className = "bg-indigo-50 text-indigo-700 border border-indigo-200 px-3 py-1 rounded-lg text-xs font-semibold";
+            } else if (q.type === 'tf') {
+                typeBadge.innerText = "Benar / Salah";
+                typeBadge.className = "bg-purple-50 text-purple-700 border border-purple-200 px-3 py-1 rounded-lg text-xs font-semibold";
+            } else if (q.type === 'complex') {
+                typeBadge.innerText = "Pilihan Ganda Kompleks (Bisa Pilih > 1)";
+                typeBadge.className = "bg-emerald-50 text-emerald-700 border border-emerald-200 px-3 py-1 rounded-lg text-xs font-semibold";
+            }
+
+            // Flag button text
+            const flagBtnText = document.getElementById('flag-text');
+            if (flaggedQuestions[index]) {
+                flagBtnText.innerText = "Batalkan Ragu";
+                document.getElementById('btn-flag').className = "border border-amber-400 bg-amber-50 text-amber-800 px-4 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-1.5";
+            } else {
+                flagBtnText.innerText = "Ragu-ragu";
+                document.getElementById('btn-flag').className = "border border-slate-300 hover:bg-slate-50 text-slate-700 px-4 py-2.5 rounded-xl font-semibold text-sm transition flex items-center space-x-1.5";
+            }
+
+            // Render options
+            const optionsContainer = document.getElementById('options-container');
+            optionsContainer.innerHTML = '';
+
+            q.options.forEach((opt, optIndex) => {
+                const label = document.createElement('label');
+                label.className = "flex items-start p-4 rounded-2xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition gap-3 group";
+                
+                let inputType = (q.type === 'complex') ? 'checkbox' : 'radio';
+                let isChecked = false;
+
+                if (q.type === 'complex') {
+                    if (userAnswers[index] && userAnswers[index].includes(optIndex)) {
+                        isChecked = true;
+                    }
+                } else {
+                    if (userAnswers[index] === optIndex) {
+                        isChecked = true;
+                    }
+                }
+
+                if (isChecked) {
+                    label.className = "flex items-start p-4 rounded-2xl border border-indigo-600 bg-indigo-50/40 cursor-pointer transition gap-3 group shadow-sm";
+                }
+
+                inputHtml = `<input type="${inputType}" name="question-opt" value="${optIndex}" ${isChecked ? 'checked' : ''} onchange="handleAnswer(${index}, ${optIndex}, '${q.type}')" class="mt-1 text-indigo-600 focus:ring-indigo-500 h-4 w-4 rounded border-slate-300">`;
+                
+                label.innerHTML = `
+                    ${inputHtml}
+                    <div class="text-sm text-slate-800 font-medium group-hover:text-indigo-900">${opt}</div>
+                `;
+                optionsContainer.appendChild(label);
+            });
+
+            // Update nav grid selection highlight
+            renderNavGrid();
+        }
+
+        function handleAnswer(qIndex, optIndex, type) {
+            if (type === 'complex') {
+                if (!userAnswers[qIndex]) {
+                    userAnswers[qIndex] = [];
+                }
+                const pos = userAnswers[qIndex].indexOf(optIndex);
+                if (pos > -1) {
+                    userAnswers[qIndex].splice(pos, 1);
+                } else {
+                    userAnswers[qIndex].push(optIndex);
+                }
+            } else {
+                userAnswers[qIndex] = optIndex;
+            }
+            loadQuestion(qIndex); // refresh to update styling
+        }
+
+        function nextQuestion() {
+            if (currentQuestionIndex < questions.length - 1) {
+                loadQuestion(currentQuestionIndex + 1);
+            }
+        }
+
+        function prevQuestion() {
+            if (currentQuestionIndex > 0) {
+                loadQuestion(currentQuestionIndex - 1);
+            }
+        }
+
+        function goToQuestion(index) {
+            loadQuestion(index);
+        }
+
+        function toggleFlag() {
+            flaggedQuestions[currentQuestionIndex] = !flaggedQuestions[currentQuestionIndex];
+            loadQuestion(currentQuestionIndex);
+        }
+
+        function confirmSubmitQuiz() {
+            const answeredCount = Object.keys(userAnswers).filter(k => {
+                const val = userAnswers[k];
+                if (Array.isArray(val)) return val.length > 0;
+                return val !== undefined;
+            }).length;
+
+            if (answeredCount < questions.length) {
+                if (!confirm(`Anda baru menjawab ${answeredCount} dari 40 soal. Apakah Anda yakin ingin menyelesaikan ujian sekarang?`)) {
+                    return;
+                }
+            } else {
+                if (!confirm("Apakah Anda yakin ingin menyelesaikan dan mengirimkan jawaban ujian ini?")) {
+                    return;
+                }
+            }
+            submitQuiz();
+        }
+
+        function submitQuiz() {
+            clearInterval(timerInterval);
+            document.getElementById('quiz-active').classList.add('hidden');
+            document.getElementById('quiz-result').classList.remove('hidden');
+
+            // Calculate score
+            let correctCount = 0;
+            questions.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                if (q.type === 'complex') {
+                    if (userAns && Array.isArray(userAns)) {
+                        // check if arrays match exactly
+                        const sortedUser = [...userAns].sort();
+                        const sortedCorrect = [...q.correctAnswers].sort();
+                        if (JSON.stringify(sortedUser) === JSON.stringify(sortedCorrect)) {
+                            correctCount++;
+                        }
+                    }
+                } else {
+                    if (userAns === q.answer) {
+                        correctCount++;
+                    }
+                }
+            });
+
+            const score = Math.round((correctCount / questions.length) * 100);
+            document.getElementById('result-score').innerText = score;
+            document.getElementById('result-correct').innerText = `${correctCount} / ${questions.length}`;
+
+            // Render review container
+            const reviewContainer = document.getElementById('review-container');
+            reviewContainer.innerHTML = '';
+
+            questions.forEach((q, idx) => {
+                const userAns = userAnswers[idx];
+                let isCorrect = false;
+
+                if (q.type === 'complex') {
+                    if (userAns && Array.isArray(userAns)) {
+                        const sortedUser = [...userAns].sort();
+                        const sortedCorrect = [...q.correctAnswers].sort();
+                        if (JSON.stringify(sortedUser) === JSON.stringify(sortedCorrect)) {
+                            isCorrect = true;
+                        }
+                    }
+                } else {
+                    if (userAns === q.answer) {
+                        isCorrect = true;
+                    }
+                }
+
+                const card = document.createElement('div');
+                card.className = `p-5 rounded-2xl border ${isCorrect ? 'border-emerald-200 bg-emerald-50/30' : 'border-rose-200 bg-rose-50/30'} space-y-3`;
+
+                let userAnsText = "Tidak dijawab";
+                if (q.type === 'complex') {
+                    if (userAns && userAns.length > 0) {
+                        userAnsText = userAns.map(i => `"${q.options[i]}"`).join(', ');
+                    }
+                } else {
+                    if (userAns !== undefined) {
+                        userAnsText = q.options[userAns];
+                    }
+                }
+
+                let correctAnsText = "";
+                if (q.type === 'complex') {
+                    correctAnsText = q.correctAnswers.map(i => `"${q.options[i]}"`).join(', ');
+                } else {
+                    correctAnsText = q.options[q.answer];
+                }
+
+                card.innerHTML = `
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold px-3 py-1 rounded-full ${isCorrect ? 'bg-emerald-100 text-emerald-800' : 'bg-rose-100 text-rose-800'}">
+                            Soal ${idx + 1} • ${isCorrect ? 'Benar' : 'Salah'}
+                        </span>
+                        <span class="text-xs text-slate-500 font-medium">${q.category}</span>
+                    </div>
+                    <p class="font-bold text-slate-900 text-sm sm:text-base">${q.question}</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="font-semibold text-slate-500 block mb-1">Jawaban Anda:</span>
+                            <span class="${isCorrect ? 'text-emerald-700' : 'text-rose-700'} font-medium">${userAnsText}</span>
+                        </div>
+                        <div class="bg-white p-3 rounded-xl border border-slate-200">
+                            <span class="font-semibold text-slate-500 block mb-1">Kunci Jawaban Benar:</span>
+                            <span class="text-emerald-700 font-medium">${correctAnsText}</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/80 p-3 rounded-xl border border-slate-200 text-xs text-slate-700">
+                        <b class="text-indigo-900 block mb-0.5">Pembahasan:</b>
+                        ${q.explanation}
+                    </div>
+                `;
+                reviewContainer.appendChild(card);
+            });
+        }
+
+        function restartQuiz() {
+            userAnswers = {};
+            flaggedQuestions = {};
+            currentQuestionIndex = 0;
+            timeLeft = 3600;
+            document.getElementById('quiz-result').classList.add('hidden');
+            document.getElementById('quiz-intro').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
